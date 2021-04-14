@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let string = 'The Quick Brown Fox';
+    let CHUHOA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let chuthuong = 'abcdefghijklmnopqrstuvwxyz';
+    let Result = []
+    for (i = 0; i < string.length; i++) {
+        if (CHUHOA.indexOf(string[i]) !== -1) {
+            Result.push(string[i].toLowerCase())
+        } else if (chuthuong.indexOf(string[i]) !== 1) {
+           Result.push(string[i].toUpperCase())
+        } else {
+            Result.push(string[i])
+        }
+    }
+    document.write(Result.join(''));
+</script>
+</body>
+</html>
